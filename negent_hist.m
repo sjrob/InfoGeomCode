@@ -23,3 +23,16 @@ deltaP = sqrt( (alpha_i .* (N0-alpha_i)) ./ (N0^2 * (N0 + 1)) )
 deltaH = sqrt(sum( ( (log(p+eps)+1) .* deltaP).^2 ));
 deltaH = deltaH / log(Nbins);
 neVar = deltaH.^2;
+
+
+%%%%%%%%%%%%%%%%%%%%
+%[p,a] = pdf(x,N);
+%
+%estimates the pdf of x using N rectangular bins
+%
+function [p,a] = pdf(x,N);
+
+[h,a] = hist(x,N);
+
+dx = (max(x)-min(x))/N;
+p = (h/sum(h))/(dx+eps);
