@@ -18,7 +18,7 @@ ne = H;
 % now compute the variance of the H measure using chained delta rule
 N0 = length(y);
 alpha_i = p*N0;
-deltaP = sqrt( (alpha_i .* (N0-alpha_i)) ./ (N0^2 * (N0 + 1)) )
+deltaP = sqrt( (alpha_i .* (N0-alpha_i)) ./ (N0^2 * (N0 + 1)) );
 %deltaH = -sum( (log(p+eps)+1) .* deltaP);
 deltaH = sqrt(sum( ( (log(p+eps)+1) .* deltaP).^2 ));
 deltaH = deltaH / log(Nbins);
