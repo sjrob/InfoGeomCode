@@ -4,19 +4,19 @@ fileStruct = dirStruct(3:end);
 
 N = length(fileStruct)
 
-NG = zeros(N,1);
-varNG= zeros(N,1);
+%NG = zeros(N,1);
+%varNG= zeros(N,1);
 NSF = zeros(N,1);
 varNSF= zeros(N,1);
-SK = zeros(N,1);
-varSK= zeros(N,1);
+%SK = zeros(N,1);
+%varSK= zeros(N,1);
 Err = zeros(N,1);
 L = zeros(N,1);
 H = zeros(N,1);
 varH = zeros(N,1);
-ne2 = zeros(N,1);
-ne3 = zeros(N,1);
-NG5 = zeros(N,1);
+%ne2 = zeros(N,1);
+%ne3 = zeros(N,1);
+%NG5 = zeros(N,1);
 
 ORDER =1;
 
