@@ -11,6 +11,7 @@ varNSF= zeros(N,1);
 %SK = zeros(N,1);
 %varSK= zeros(N,1);
 Err = zeros(N,1);
+T = zeros(N,1);
 L = zeros(N,1);
 H = zeros(N,1);
 varH = zeros(N,1);
@@ -34,7 +35,9 @@ for n=1:N
     %[ne3(n),vne] = negent_sr3(y);
     %[ne(n),vne] = negent_sr(y);
     %NG5(n) = ng5(y);
+    t = tic;
     [a,e,k] = arburg(y,ORDER);
+    T(n) = toc(t); %time used in the prediction model
     Err(n) = e; %rmse prediction error
 end;
 
