@@ -9,7 +9,7 @@ meshAx = [0,1,0,1];
 MinTrain = 5;
 N = 200;
 MaxTrain = MinTrain + N;
-hps =  [10 1 0.1];
+hps =  [10 1 1];
 sampFlag = zeros(length(X),1);
 
 f = randperm(length(X));

@@ -19,7 +19,7 @@ varH = zeros(N,1);
 %ne3 = zeros(N,1);
 %NG5 = zeros(N,1);
 
-ORDER =1;
+ORDER =20;
 
 for n=1:N
     fn = fileStruct(n).name;
